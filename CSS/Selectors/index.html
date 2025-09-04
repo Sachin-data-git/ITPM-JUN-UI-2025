@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        /* Universal Selector  (*) */
+
+        * {
+            border: 1px solid black;
+        }
+
+
+        /* Element Selector/Tag selector */
+        /* p{
+            color: red;
+        } */
+
+        /* Id selector (Fastest selector) (#) */
+        #demo {
+            color: green;
+            /* background-color: yellow; */
+        }
+
+        /* class Selector (.) */
+        .newcls {
+            color: red;
+            /* background-color: yellow; */
+        }
+
+        .demo1 {
+            background-color: violet;
+        }
+
+        /* Group Selector (,) */
+        #demo,
+        .newcls {
+            background-color: yellow;
+        }
+
+        /* Descendent Selector */
+        /* div p span{
+            color: red;
+        } */
+
+        /* Child Combinator (>) */
+        /* div>p>span{
+            color: green;
+        } */
+
+
+        /* Attribute Selector  tagName[attrName="value"]*/
+        input[type="email"] {
+            background-color: red;
+        }
+
+        a[target="_blank"] {
+            color: red;
+        }
+
+
+        b {
+            color: red;
+        }
+
+        #uniq {
+            color: blue;
+        }
+
+        .demo2 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="newcls">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p id="demo">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="newcls">Lorem ipsum dolor sit amet.</p>
+
+
+
+    <div>
+        <p>
+            <span>This is span inside div</span>
+        </p>
+    </div>
+
+    <span>This is span outside div</span>
+    <br>
+
+
+    <input type="text" placeholder="Enter Name">
+    <input type="email" placeholder="Enter email">
+    <input type="tel" placeholder="Enter mob">
+
+    <a href="" target="_blank">click1</a>
+    <a href="">click2</a>
+
+
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span class="demo1">Lorem ipsum dolor sit amet.</span>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <span class="demo1">Lorem ipsum dolor sit amet.</span>
+
+    <b id="uniq" class="demo2">bold</b>
+
+    <!-- Task -->
+    <!-- Task 1: Basic Selectors
+    Create a webpage with 3 paragraphs.
+    Apply red color to all <p> tags using the element selector.
+        Apply blue color only to the paragraph with id="special".
+        Apply green color to the paragraph with class="highlight". -->
+
+        <!-- Task 2: Grouping Selector
+Create a page with <h1>, <h2>, and <p>.
+Use one CSS rule to apply the same color to all three elements. -->
+
+<!-- Task 3: Descendant & Child Selectors
+Create a <div> with a nested <p> and <span>.
+Style only the <p> inside the <div> using descendant selector (div p).
+Style only the direct child <span> inside the <div> using child selector (div > span). -->
+
+
+    <!-- Task 4: Attribute Selectors
+Create an <input type="text"> and <input type="password">.
+Use CSS attribute selector to style:
+All text inputs with a green border.
+All password inputs with a red border. -->
+
+<!-- Task 5: Universal Selector
+Apply a color red  to all elements using the universal selector (*). -->
+
+</body>
+
+</html>

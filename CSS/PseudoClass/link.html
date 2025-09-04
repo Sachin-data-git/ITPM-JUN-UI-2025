@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #an1:visited {
+            color: yellow;
+        }
+
+        #an2:hover {
+            color: red;
+        }
+
+        button:hover {
+            background-color: rgb(206, 237, 9);
+            color: red;
+            border-color: white;
+        }
+
+        #an3:active {
+            font-size: 40px;
+        }
+
+
+        #inp1:invalid {
+            color: red;
+        }
+
+        #inp1:valid {
+            color: rgb(57, 234, 8);
+        }
+
+        #inp2:required {
+            border-color: red;
+        }
+
+        #inp3:read-only {
+            color: rgb(61, 12, 239);
+        }
+
+        #inp5:focus {
+            background-color: yellow;
+            color: red;
+        }
+
+        input[type="checkbox"]:checked {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- link Related  -->
+    <a href="#####" id="an1">visited</a>
+    <a href="######" id="an2">hover</a>
+    <a href="######" id="an3">Active</a>
+    <button>hover</button>
+
+    <!-- Input Related -->
+    <!-- valid,invalid,required,readonly,focus,disabled ,checked -->
+    <form action="">
+        <!-- <input type="email" id="inp1"> -->
+        <input type="text" id="inp2" required>
+        <input type="text" id="inp3" value="demo" readonly>
+        <input type="text" id="inp4" disabled>
+        <input type="text" id="inp5">
+        <input type="checkbox" checked>
+        <input type="submit">
+    </form>
+
+    <!-- Task 1: Link Pseudo-classes
+      Create a navigation menu with 4 links (Home, About, Services, Contact). Apply the following styles using pseudo-classes:
+\      a:visited → Change visited links to purple.
+      a:hover → Change background color on hover.
+      a:active → Change text color when the link is clicked. -->
+
+    <!-- Task 2: Input Focus
+      Create a form with two text fields (Username, Password) and a submit button.
+      Style inputs so that when focused (input:focus), the border color changes to green. -->
+
+    <!-- Task 3: Input Validity
+      Create a form with:
+      An email input (type="email")
+      A password input (type="password") with required attribute
+      Apply styles using pseudo-classes:
+      input:valid → Add a green border when input is valid.
+      input:invalid → Add a red border when input is invalid. -->
+
+
+    <!-- Task 4: Input States
+Create a checkbox (I agree to terms).
+Use input:checked to change the background of the label when the box is checked.
+Create a disabled button (input:disabled) and style it with a gray background. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
