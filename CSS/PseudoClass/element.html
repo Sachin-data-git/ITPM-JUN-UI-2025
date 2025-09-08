@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: "Hello ";
+            color: red;
+        }
+        h1::after{
+            content: "User ";
+            color: red;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        p::first-line{
+            background-color: yellow;
+        }
+        input::placeholder{
+            color: red;
+        }
+
+        span{
+             /* user-select: auto; */
+            /* user-select: none; */
+            user-select:all;
+        }
+        span::selection{
+            background-color: yellow;
+            color: red;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome,</h1>
+
+    <p>BLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi asperiores, libero neque repellat at, reiciendis hic culpa facere et dolorem aliquid ipsa, ducimus officiis eos in omnis quaerat iste iusto.</p>
+
+    <input type="text" placeholder="Enter Name" name="" id=""><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor necessitatibus libero explicabo perferendis, nostrum delectus praesentium, nemo reprehenderit reiciendis beatae blanditiis eum sequi animi nulla deserunt autem placeat dolorem molestias.</span>
+
+    <!-- Task  -->
+     <!-- make a paragraph intereactive using pseudo Elements -->
+      <!-- make a one paragraph intereactive using some pseuso class and elements -->
+    
+</body>
+</html>
