@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+          }
+          #first{
+            background-color: red;
+          }
+          #second{
+            margin-top: -50px;
+            margin-left: 50px;
+            background-color: green;
+            position: relative;
+            z-index: -1;
+          }
+          #third{
+            margin-top: -50px;
+            margin-left: 100px;
+            background-color: blue;
+            position: relative;
+            z-index: -2;
+          }
+    </style>
+</head>
+<body>
+        <section>
+            <div id="first">1</div>
+            <div id="second">2</div>
+            <div id="third">3</div>
+        </section>
+</body>
+</html>
