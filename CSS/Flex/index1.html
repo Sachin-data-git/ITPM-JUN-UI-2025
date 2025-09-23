@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        section{
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-direction: column; */
+
+            
+            /* align flex items horizontally */
+            /* justify-content: space-evenly; */
+            /* justify-content: center; */
+
+            /* align flex items vertically */
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+
+            /* flex-wrap: ; */
+            /* flex-direction: ; */
+              /* justify-content: ; */
+              /* align-items: ; */
+              
+
+
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        #item-1{
+            /* align-self:flex-start ; */
+            /* order: 4; */
+        
+        }
+        #item-2{
+            /* align-self:center ; */
+            /* order: 3; */
+        
+        }
+        #item-3{
+            /* align-self:flex-end ; */
+            /* order: 2; */
+            /* flex-grow: 1; */
+        
+        }
+        #item-4{
+            /* align-self:flex-start ; */
+            /* order: 1; */
+            /* flex-grow: 2; */
+        
+        }
+    </style>
+</head>
+<body>
+      <section>
+        <div id="item-1">1</div>
+        <div id="item-2">2</div>
+        <div id="item-3">3</div>
+        <div id="item-4">4</div>
+      </section>
+</body>
+</html>

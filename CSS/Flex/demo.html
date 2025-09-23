@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container,#parent{
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .container-item{
+            width: 100%;
+            border: 1px solid gray;
+        }
+        .container-item img{
+            width: 80%;
+        }
+        .imgitem{
+            width: 20%;
+            border: 1px solid pink;
+        }
+        .imgitem img{
+            width: 70%;
+        }
+        
+        .txtitem{
+            width: 75%;
+            border: 1px solid pink;
+        }
+
+
+        /* desktop */
+        
+        @media only screen and (min-width:768px){
+             .container-item{
+            width: 47%;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <div class="container-item">
+            <img src="https://organicindia.com/cdn/shop/files/613X630-tulsi-farm-image.png?v=1666268098" alt="">
+        </div>
+        <div class="container-item">
+            <div id="uniq">
+                <h2>GET THE ‘TULSI’ WELLNESS EDGE</h2>
+            </div>
+            <div id="parent">
+                <div class="imgitem"><img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
+                </div>
+                <div class="txtitem">
+                    <h4>GUARD AGAINST COUGH, COLD & POLLUTION</h4>
+                    <p>Tulsi is long known to have anti-inflammatory, anti-bacterial, and anti-viral properties that
+                        help fight infections, hasten the healing of wounds and increase immunity against cough and
+                        cold.</p>
+                </div>
+                <div class="imgitem"><img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
+                </div>
+                <div class="txtitem">
+                    <h4>GUARD AGAINST COUGH, COLD & POLLUTION</h4>
+                    <p>Tulsi is long known to have anti-inflammatory, anti-bacterial, and anti-viral properties that
+                        help fight infections, hasten the healing of wounds and increase immunity against cough and
+                        cold.</p>
+                </div>
+                <div class="imgitem"><img src="https://organicindia.com/cdn/shop/files/icon-1.png?v=1667396330" alt="">
+                </div>
+                <div class="txtitem">
+                    <h4>GUARD AGAINST COUGH, COLD & POLLUTION</h4>
+                    <p>Tulsi is long known to have anti-inflammatory, anti-bacterial, and anti-viral properties that
+                        help fight infections, hasten the healing of wounds and increase immunity against cough and
+                        cold.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TASK -->
+     <!-- https://themewagon.github.io/Koppee/index.html -->
+      <!-- https://organicindia.com/?srsltid=AfmBOorwY-c2Oknrs53Bk_m2C9Z2n_d41Ly98F2KVLPGk7WYUAJE_ATx -->
+</body>
+
+</html>
