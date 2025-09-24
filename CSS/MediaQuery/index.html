@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        section{
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        div{
+            height: 100px;
+            width: 100%;
+            border: 1px solid green;
+        }
+        @media only screen and (min-width:768px){
+             div{
+            width: 47%;
+        }
+        }
+
+        @media only screen and (min-width:1200px) {
+             div{
+            width: 23%;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- breakpoints -->
+     <!-- 320px,576px,768px,992px,1200px,1400px -->
+
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+    
+</body>
+</html>
