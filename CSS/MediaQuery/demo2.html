@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #parent{
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: rgb(194, 187, 187);
+            padding: 100px 0px;
+        }
+        .child{
+            width: 100%;
+            text-align: center;
+            /* border: 1px solid; */
+            margin: 10px;
+            
+        }
+        .child div{
+            /* border: 1px solid blue; */
+            /* width: 40%;
+            border-radius: 100%;
+            background-color: rgb(219, 209, 209);
+            padding: 20px; */
+        }
+        .child  img{
+            /* border: 1px solid red; */
+            width:40%;
+            /* padding: 20px; */
+            border-radius: 100%;
+        }
+
+        @media only screen and (min-width:768px) {
+             .child{
+            width: 45%;
+        }
+        }
+        @media only screen and (min-width:1200px) {
+             .child{
+            width: 23%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="parent">
+        <div class="child">
+            <!-- <div> -->
+                <img src="https://kidslifedev.wpengine.com/wp-content/uploads/2014/12/service2.jpg" alt="">
+            <!-- </div> -->
+            <h5>Music Class</h5>
+            <p>Decor ostdcaer urabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, invest tibulum nisl ligula</p>
+        </div>
+        <div class="child">
+           <div>
+             <img src="https://kidslifedev.wpengine.com/wp-content/uploads/2014/12/service2.jpg" alt="">
+           </div>
+            <h5>Music Class</h5>
+            <p>Decor ostdcaer urabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, invest tibulum nisl ligula</p>
+        </div>
+        <div class="child">
+            <img src="https://kidslifedev.wpengine.com/wp-content/uploads/2014/12/service2.jpg" alt="">
+            <h5>Music Class</h5>
+            <p>Decor ostdcaer urabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, invest tibulum nisl ligula</p>
+        </div>
+        <div class="child">
+            <img src="https://kidslifedev.wpengine.com/wp-content/uploads/2014/12/service2.jpg" alt="">
+            <h5>Music Class</h5>
+            <p>Decor ostdcaer urabitur ultrices posuere mattis. Nam ullamcorper, diam sit amet euismod pelleontesque, eros risus rhoncus libero, invest tibulum nisl ligula</p>
+        </div>
+    </section>
+    
+</body>
+</html>
