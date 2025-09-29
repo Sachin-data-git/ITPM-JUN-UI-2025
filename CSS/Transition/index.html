@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* ease - transition will start slow, then go fast, and end slow (this is default)
+linear - transition will keep the same speed from start to end
+ease-in - transition will start slow
+ease-out - transition will end slow
+ease-in-out - transition will have a slow start and end */
+
+        div{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            transition-duration:5s;
+            /* transition-delay:5s ; */
+            /* transition-timing-function: ease-out; */
+
+           
+        }
+        div:hover{
+             /* transform:translateX(-500px); */
+             /* transform:translateY(-500px); */
+             /* transform:translate(500px,500px); */
+
+             /* transform: scaleX(-2); */
+             /* transform: scaleY(2); */
+             /* transform: scale(-2); */
+
+             /* transform: skewX(180deg); */
+             /* transform: skewY(180deg); */
+             /* transform: skew(180deg,170deg); */
+
+             /* transform: rotateX(350deg); */
+             /* transform: rotateY(350deg); */
+             /* transform: rotatez(-360deg); */
+
+             /* transform: translateX(1000px); */
+             border-radius: 100%;
+             background-color: yellow;
+             /* transform: rotateZ(360deg); */
+
+             transform: translateX(1000px) rotateZ(360deg);
+
+
+        }
+    </style>
+</head>
+<body>
+       <div>1</div>
+</body>
+</html>

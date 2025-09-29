@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            background-color: red;
+            width: 100px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: demo;
+            animation-duration: 5s;
+            /* animation-delay: 5s; */
+            /* animation-timing-function: ease-in; */
+            animation-iteration-count:infinite ;
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: backwards; */
+        }
+
+        @keyframes demo {
+
+            /* from{
+                transform: translateX(-200px);
+            }
+            to{
+                transform: translateX(1000px);
+ 
+            } */
+
+            0%{
+                transform: translate(-200px,0px) rotateZ(0deg);
+            }
+            95%{
+                transform: translate(1000px,0px) rotateZ(360deg);
+                background-color: yellow;
+                border-radius: 100%;
+
+            }
+            98%{
+
+                transform: translate(1000px,400px) rotateZ(-360deg);
+                background-color: rgb(78, 222, 7);
+                border-radius: 0%;
+            }
+            99%{
+                
+                transform: translate(0px,400px)rotateZ(360deg);
+                background-color: rgb(9, 248, 204);
+                border-radius: 100%;
+
+            }
+            100%{
+ transform: translate(0px,0px) rotateZ(-360deg);
+                background-color: rgb(250, 79, 0);
+                border-radius: 0%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+1
+    </div>
+    
+</body>
+</html>
