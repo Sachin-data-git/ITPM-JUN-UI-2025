@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+
+<body>
+
+    <script>
+        let color = ["Red", "yellow", "green", "pink", "violet", "purple"];
+
+        console.log(color);
+        console.log(color.length); //6
+        console.log(color.push("black")) //7
+        console.log(color);
+        console.log(color.pop()); //black
+        console.log(color);
+        console.log(color.unshift("White")); //7
+        console.log(color);
+        console.log(color.shift());//white 
+        console.log(color);
+
+
+
+        // let arr=[1,2,20,4,5,6,7,8,9,130,1]
+        // console.log(arr.find(num=> num>7)); 
+        // console.log(arr.findIndex(num=> num>7)); 
+        // console.log(arr.includes(2));
+        // console.log(arr.indexOf(130));
+        // console.log(arr.join("/"));
+        // console.log(arr.indexOf(1)); //0
+        // console.log(arr.lastIndexOf(1)); //10
+        // console.log(arr.reverse()); //10
+
+        // for(i=arr.length-1;i>=0;i--){
+        //     console.log(arr[i]);
+        // }
+
+
+        //print the addition of array elements
+        // let arr=[1,2,3,4,5,6,7,8,9,10];
+
+        // sum=0;
+        // for(i=0;i<arr.length;i++){
+        //     sum=sum+arr[i];
+        // }
+        // console.log(sum)
+
+        //print the addition of array elements even numbers
+
+        // let numbers = [1, 2, 3, 4];
+        // let sum = numbers.reduce((accumulator, currentValue) => accumulator +
+        //     currentValue, 10);
+        // console.log(sum);  // Output: 20
+        
+        
+    //map 
+    //filter
+
+
+    let arr=[1,2,3,4,5,6,7,8];
+
+    //process
+    let newArr=arr.map((n)=>{return n+2})
+    console.log(newArr);
+
+
+//condition
+    let newArr1=arr.filter((n)=>{return (n%2==0)})
+    console.log(newArr1);
+
+
+
+
+//      Q1.
+// Create an array named fruits with the values "apple", "banana", "mango".
+// Then print the second element in the console.
+
+// Q2.
+// Create an array numbers with values 10, 20, 30, 40, 50.
+
+// Print the length of the array.
+
+// Print the last element using index.
+
+// Q3.
+// Create an array called student that stores your name, age, and course name.
+// Then print all values using console.log().
+
+// Q4.
+// Create an array of 5 colors.
+// Change the 3rd color to "black" and print the updated array.
+
+// Q5.
+// Create an array marks = [85, 90, 78, 92, 88].
+// Find the average of marks using array indexes.
+
+// Q6.
+// Create an array cities using new Array() that contains "Delhi", "Mumbai", "Chennai", "Kolkata".
+// Print the array.
+
+// Q7.
+// Create an empty array using new Array() and then add three numbers one by one.
+// Print the final array.
+
+// Q8.
+// Create an array using new Array(5) and print its length.
+// Explain what happens in a comment.
+
+// Q9.
+// Create an array using new Array("red", "green", "blue").
+// Access and print the first and last element.
+
+// Q10.
+// Use new Array() to create an array of 3 names.
+// Then update the 2nd name and print the array again.
+
+
+
+    
+    </script>
+</body>
+
+</html>
