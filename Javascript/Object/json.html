@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+
+        //Js Object
+        let jsobject={
+            id:1,
+            name:"atul",
+            age:35
+        }
+
+        console.log(jsobject)
+        // js object to json -  JSON.stringyfy(object)
+        let JsonObject=JSON.stringify(jsobject);
+        console.log(JsonObject);
+
+        //json to js Object JSON.parse(object)
+
+        let newjsobject=JSON.parse(JsonObject);
+        console.log(newjsobject)
+
+
+
+
+      </script>
+</body>
+</html>

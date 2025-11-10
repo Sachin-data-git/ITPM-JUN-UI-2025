@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let original={
+            name:"demo",
+            marks:{
+                html:10,
+                css:20
+            }
+        }
+
+
+        //ShallowCopy
+        // let shallowcopy=Object.assign({},original);
+        // console.log(shallowcopy);
+        // console.log(original);
+
+        // shallowcopy.marks.html=100;
+        //  console.log(shallowcopy);
+        // console.log(original);
+
+
+        //deep Copy
+        let deepcopy=JSON.parse(JSON.stringify(original));
+        // console.log(deepcopy)
+        // console.log(original)
+
+        deepcopy.marks.html=100;
+          console.log(deepcopy);
+        console.log(original);
+
+
+     </script>
+</body>
+</html>
