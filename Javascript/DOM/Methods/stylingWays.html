@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo1 {
+            color: red;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        .light {
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    </div>
+
+    <p id="demo" class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus praesentium autem
+        tenetur qui eligendi facilis, rem tempore officiis reiciendis fugiat cumque omnis doloremque amet quibusdam
+        voluptatum minus aliquid. Numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odit ipsam vel
+        voluptatem. Asperiores sequi dignissimos commodi itaque suscipit numquam, voluptas veniam autem ipsa sit
+        laudantium tempora maxime obcaecati fugit.</p>
+
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">Remove</button>
+    <button onclick="toggle()" id="btn">dark</button>
+
+    <script>
+        let para = document.getElementById("demo");
+        // 1)using element.style.propertyName="value";
+        // para.style.textAlign="justify"
+
+        // 2)using element.style.setProperty("propertName","propertValue");
+        // para.style.setProperty("textAlign","justify")  wrong;
+        // para.style.setProperty("text-align","justify") right;
+        // para.style.setProperty("color","red")  ;
+
+        // 3) element.id="idName"
+        // para.id="demo1";
+
+
+        // 4)class element.classList.add("className") 
+        // 4)class element.classList.remove() 
+        // 4)class element.classList.toggle() 
+        // 4)class element.classList.replace() 
+
+        function add() {
+            para.classList.add("dark")
+        }
+        function remove() {
+            para.classList.remove("light")
+        }
+        function toggle() {
+            para.classList.toggle("dark")
+
+
+            let theme = document.getElementById("btn").textContent;
+            console.log(theme)
+
+            if (theme == "dark") {
+
+                document.getElementById("btn").textContent = "light";
+            }
+            else {
+                document.getElementById("btn").textContent = "dark";
+
+            }
+
+
+
+        }
+
+
+        //   1) create a you tube subscribe button
+        // 2)
+
+//   let demo=document.getElementsByTagName("p")
+//       for(i=0;i<demo.length;i++){
+//         demo[i].style.color="red"
+//       }
+
+    </script>
+</body>
+
+</html>

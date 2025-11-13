@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body class="dark">
+       <button onclick="Theme()">Dark</button>
+
+       <script>
+        function Theme(){
+
+           let theme=document.querySelector("button").textContent;
+            // console.log(theme)
+
+            if(theme=="Dark"){
+                document.querySelector("button").textContent="Light";
+               
+            }
+            else{
+                  document.querySelector("button").textContent="Dark";
+                // document.querySelector("body").classList.toggle("dark")
+            }
+             document.querySelector("body").classList.toggle("light")
+
+        }
+       </script>
+</body>
+</html>
