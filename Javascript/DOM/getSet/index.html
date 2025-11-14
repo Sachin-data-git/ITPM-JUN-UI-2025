@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get/Set</title>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button onclick="getData()">getData</button>
+    <button onclick="setData()">setData</button>
+
+    <h1></h1>
+    <!-- <button onclick="getEl()">getEl</button> -->
+    <button onclick="setEl()">setEl</button>
+
+    <script>
+
+        function getData(){
+            // alert("demo")
+            let para=document.querySelector("p").textContent;
+            // alert(para);
+            console.log(para)
+        }
+        function setData(){
+            // alert("demo")
+            let para=document.querySelector("p").textContent="This is New Text";
+            // alert(para);
+            console.log(para)
+        }
+
+        // function getEl(){
+        //        let title=document.querySelector("h1").innerHTML;
+        //        console.log(title);
+        // }
+        function setEl(){
+            //    let title=document.querySelector("h1").innerHTML="<span>This is span</span>";
+            //    let title=document.querySelector("h1").innerText="<span>This is span</span>";
+            //    console.log(title);
+        }
+
+
+
+
+    </script>
+</body>
+</html>

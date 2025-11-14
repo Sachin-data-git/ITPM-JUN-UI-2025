@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 200px;
+            border: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 100px;
+            width: 47%;
+            border: 1px solid rgb(24, 216, 7);
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+
+    <input type="text" id="input">
+    <button onclick="access()">accessvalue</button>
+    <ol>
+        <li id="first">item-1</li>
+        <li>item-2</li>
+        <li id="third">item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+    </ol>
+
+    <button onclick="addItem()">click</button>
+
+    <!-- <div id="div">
+        <p id="para">This Is Original</p>
+    </div>
+    <button onclick="replace()">replace</button> -->
+
+
+       <section id="a">
+        <div id="b">
+            This is Div1
+        </div>
+        <div id="c">
+            This is Div2
+        </div>
+       </section>
+
+       <button onmousedown="remove()">removeChild</button>
+
+
+    <script>
+
+        // createElement("elementName") createTextNode("text")  appendChild(child) insertBefore(newEl,ref) replaceChild(newEl,ref) remove() removeChild(child)
+
+           function access(){
+           let valueOfInput= document.getElementById("input").value;
+           console.log(valueOfInput);
+           }
+
+
+
+        let count=6;
+       function addItem(){
+         let li=document.createElement("li");
+        let item=document.createTextNode(`item-${count}`);
+        count++;
+        li.appendChild(item);
+        // document.querySelector("ol").appendChild(li);
+
+        // let item1=document.getElementById("first")
+        let item3=document.getElementById("third")
+        document.querySelector("ol").insertBefore(li,item3)
+        
+    }
+
+
+    function replace(){
+        let h1=document.createElement("h1");
+        let data=document.createTextNode("This is Replaced Data");
+        h1.appendChild(data);
+
+        let ref=document.getElementById("para");
+
+        document.getElementById("div").replaceChild(h1,ref)
+
+    }
+
+
+    function remove(){
+        let a=document.getElementById("a");
+        let b=document.getElementById("b");
+
+        // a.removeChild(b);
+        a.remove();
+    }
+
+    // crud
+
+
+    </script>
+</body>
+</html>

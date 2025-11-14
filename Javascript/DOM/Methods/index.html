@@ -35,7 +35,29 @@
         <h3 class="demo1">This is H3</h3>
         <h3 class="demo1">This is H3</h3> -->
 
+
+        <div>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+
+        <div id="demo">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
       <script>
+
+        let parent=document.getElementById("demo");
+      let para=parent.getElementsByTagName("p");
+
+      for(i=0;i<para.length;i++){
+        para[i].style.color="red";
+      }
+
         // DOM Accessing Methods
 
 

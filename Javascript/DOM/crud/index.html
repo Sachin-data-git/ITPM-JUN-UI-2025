@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="parent">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ex officiis. Fuga necessitatibus libero quam, eaque sit perspiciatis unde perferendis quae eum omnis magni, id sed quo maxime iste odit.</p>
+     </div>
+
+     <button onclick="addData()">Add Data</button>
+
+     <script>
+
+        function addData(){
+            //createElement()
+        let element=document.createElement("p");
+        console.log(element);
+
+        // createTextNode()
+        // let data=prompt("Enter Data")
+        let text=document.createTextNode("This is Heading")
+        console.log(text);
+
+        //appendChild()
+          element.appendChild(text);
+          console.log(element)
+
+
+          document.getElementById("parent").appendChild(element);
+
+
+
+
+        }
+             </script>
+</body>
+</html>
