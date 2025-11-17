@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        i:hover{
+            color: red;
+            cursor: grab;
+        }
+
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+        section{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(214, 8, 8);
+        }
+    </style>
+</head>
+<body>
+      <input type="password" placeholder="Enter Password" id="input">
+      <i class="far fa-eye-slash" id="icon"></i>
+
+
+      <div>
+
+      </div>
+
+
+
+      <section>
+           
+      </section>
+
+      <script>
+        document.getElementById("icon").addEventListener("mousedown",()=>{
+            document.getElementById("input").setAttribute("type","text");
+             document.getElementById("icon").setAttribute("class","far fa-eye");
+        })
+        document.getElementById("icon").addEventListener("mouseup",()=>{
+            document.getElementById("input").setAttribute("type","password");
+             document.getElementById("icon").setAttribute("class","far fa-eye-slash");
+        })
+
+
+        document.querySelector("div").addEventListener("mousemove",(event)=>{
+            // console.log("Mouse moved");
+            console.log(event);
+            // console.log(event.clientX);
+            // console.log(event.clientY);
+        })
+
+
+
+        document.querySelector("section").addEventListener("mouseenter",()=>{
+            document.querySelector("section").style.backgroundColor="blue";
+        })
+        document.querySelector("section").addEventListener("mouseleave",()=>{
+            document.querySelector("section").style.backgroundColor="green";
+        })
+      </script>
+</body>
+</html>

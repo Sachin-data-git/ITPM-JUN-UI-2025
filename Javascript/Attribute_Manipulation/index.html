@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-shadow{
+            box-shadow: 10px 10px 10px red;
+        }
+        .box-shadow1{
+            box-shadow: 10px 10px 10px rgb(126, 233, 5);
+        }
+
+     
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perferendis, provident dignissimos dolorum error est laborum quidem aliquid? Et voluptatem deserunt magnam illum at praesentium rerum tenetur provident omnis aspernatur?</p>
+       <!-- <a href="https://www.wikipedia.org/" target="_blank">Click</a>
+
+       <button onclick="getAttr()">click</button> -->
+
+       <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="" height="300" width="300" class="box-shadow">
+       <button ondblclick="changeImage()">changeImage</button>
+
+       <script>
+        //    function  getAttr(){
+
+        //    let data=document.querySelector("a").getAttribute("target");
+        //    console.log(data);
+
+        //    }
+
+        function changeImage(){
+            // Element.setAttribute("attrName","attrValue")
+            // let imgAddres=prompt("Enter Address");
+            document.querySelector("img").setAttribute("src","https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg")
+            //  document.querySelector("img").setAttribute("class","box-shadow1")
+            //  document.querySelector("img").removeAttribute("class")
+           let demo= document.querySelector("img").hasAttribute("id");
+           console.log(demo)
+
+           
+
+        }
+
+
+        // document.querySelector("p").setAttribute("id","demo");
+        // document.getElementById("demo").style.color="red"
+
+
+        // TASK
+
+        
+        //            1 Change Image Source
+// Create an image tag.
+// On button click, use setAttribute() to change the image source.
+
+
+// 2 Disable Button Using setAttribute
+// Create a button.
+// On another button click, disable it by using:
+
+// button.setAttribute("disabled", true)
+
+
+// 3 Read href of a Link
+// Create a hyperlink.
+// On click of a button, get its href using getAttribute() and show it on the page.
+
+
+// 4 Add a Class to an Element
+// Create a div.
+// On button click, use setAttribute("class", "box") to add a class.
+
+
+// 5 Remove Class Attribute
+// Create a paragraph with class "red".
+// On button click, use removeAttribute("class") to remove the red color.
+
+
+// 6 Change Input Placeholder
+// Create an input box.
+// On button click, use setAttribute() to change placeholder to "Enter your name".
+
+
+// 7 Read Image Alt Text
+// Create an image with alt text.
+// On button click, show the alt text using getAttribute("alt").
+
+
+// 8 Toggle Required Attribute
+// Create a form input.
+// On button click:
+// If input has required → remove it
+// Else → add required using setAttribute()
+
+
+
+
+// 9 Add Multiple Attributes
+// Create a button.
+// On click, add:
+// id="myBtn"
+// class="primary"
+
+
+
+
+// Using setAttribute().
+//  Change Link Target
+
+// Create a link.
+// On button click, set:
+
+// a.setAttribute("target", "_blank")
+
+
+// 11 Remove src of an Image
+// Create an image.
+// On button click, remove its src using removeAttribute().
+
+
+// 12 Read Type of Input
+// Create an input of type password.
+// On button click, show:
+// "Current type is: password"
+// (using getAttribute("type"))
+
+
+// 13 Set Custom Attribute
+// Create a paragraph.
+// On button click, set attribute:
+// p.setAttribute("data-info", "hello")
+
+
+
+
+
+// Show the value using getAttribute().
+// 14 Style Attribute Change
+// Create a box.
+// On button click, use setAttribute("style", "background:red; width:200px") to apply style.
+
+
+// 15 Remove Style Attribute
+// Create an element with inline style.
+// On button click → remove its style attribute.
+       </script>
+</body>
+</html>
