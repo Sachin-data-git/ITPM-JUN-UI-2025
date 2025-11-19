@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>BLorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quidem doloremque fuga dolorem, modi et deleniti, blanditiis facere maiores, iusto dicta quaerat ab nulla ducimus similique expedita itaque provident perferendis.</p>
+
+
+    <ul id="parent">
+        <li id="demo1">Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <li>Item-5</li>
+    </ul>
+
+    <div id="dd">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <script>
+        // document.querySelector("ul").addEventListener("click",()=>{
+        //     document.querySelector("ul").style.color="red";
+        // })
+
+
+        // document.getElementById("demo1").addEventListener("click",()=>{
+        //      document.getElementById("demo1").style.color="red";
+        // })
+
+        document.getElementById("parent").addEventListener("click",(event)=>{
+            // document.querySelector("li").style.color="red";
+
+            //  console.log(event.target);
+            //  console.log(event.target.nodeName);
+
+            if(event.target  && event.target.nodeName=="LI"){
+                // alert("Li")
+                event.target.style.color="red";
+            }
+
+
+        })
+        document.getElementById("dd").addEventListener("click",(event)=>{
+           
+                // console.log(event.target.nodeName)
+                // console.log(event.target.tagName)
+            if(event.target  && (event.target.nodeName=="p")){
+                // alert("Li")
+                event.target.style.color="red";
+            }
+
+
+        })
+
+
+
+    </script>
+
+</body>
+</html>

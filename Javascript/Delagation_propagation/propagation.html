@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 300px;
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+        }
+        div{
+            height: 200px;
+            width: 80%;
+            border: 1px solid rgb(92, 225, 3);
+            background-color:gray;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            height: 100px;
+            width: 80%;
+            border: 1px solid rgb(188, 6, 133);
+            background-color:rgb(10, 22, 250);
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: 20px 30px;
+            border-radius: 10px;
+            border: 2px solid red;
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body>
+        <section>
+            <div>
+                <p>
+                    <button>Click</button>
+                </p>
+            </div>
+        </section>
+
+
+        <script>
+            let button=document.querySelector("button");
+            button.addEventListener("click",(event)=>{
+                alert("This is Button");
+                event.stopPropagation();
+               
+                
+                
+            },false)
+
+            let para=document.querySelector("p");
+            para.addEventListener("click",()=>{
+                alert("This is paragraph");
+               
+            },false)
+
+            let div=document.querySelector("div");
+            div.addEventListener("click",()=>{
+                alert("This is div");
+            },false)
+            let section=document.querySelector("section");
+            section.addEventListener("click",()=>{
+                alert("This is section");
+            },false)
+            let body=document.querySelector("body");
+            body.addEventListener("click",(event)=>{
+                event.stopPropagation();
+                alert("This is body");
+
+            },false)
+        </script>
+</body>
+</html>
