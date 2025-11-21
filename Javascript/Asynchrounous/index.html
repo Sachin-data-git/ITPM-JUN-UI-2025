@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+    //    let clear=setInterval(()=>{
+    //     demo1(),
+    //     demo2()
+    //    },1000)
+
+    //    function demo1(){
+    //     console.log("hello");
+    //    }
+    //    function demo2(){
+    //     console.log("World");
+    //    }
+
+    //     setTimeout(()=>{
+    //         clearInterval(clear);
+    //     },5000)
+
+
+
+
+    //callback function /higher function
+
+
+    //higher order function
+        // function greet(callback){
+        //     callback();
+        // }
+
+        // greet(demo);
+
+
+
+
+   //callback function
+    //    function demo(){
+    //     console.log("Hello");
+    //    }
+
+
+    function first(callback){
+        setTimeout(()=>{
+            console.log("first")
+        callback();
+        },3000)
+    }
+
+    first(second);
+
+
+    console.log(x);
+
+    function second(){
+        console.log("second")
+    }
+
+
+    // document.addEventListener(()=>{},)
+    // arr.map(()=>{})
+
+    
+
+
+       </script>
+</body>
+</html>

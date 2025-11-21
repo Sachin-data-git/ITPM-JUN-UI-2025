@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="btnOrder()">Order</button>
+    <script>
+                function fetchData() {
+                    return new Promise((resolve, reject) => {
+                        setTimeout(() => {
+
+
+                            console.log("Data Fetched....")
+                            resolve()
+
+                        }, 1000)
+                    })
+                }
+                function processData() {
+                    return new Promise((resolve, reject) => {
+                        setTimeout(() => {
+          console.log("Data Processed....")
+                            resolve()
+
+                        }, 1000)
+                    })
+                }
+                function saveData() {
+                  return new Promise((resolve,reject)=>{
+                        setTimeout(()=>{
+                          console.log("Data saved....")
+                            resolve()
+
+                        },1000)
+                      })
+                }
+
+
+                // fetchData().then(processData).then(saveData).then(()=>{
+                //     console.log("All Task Completed");
+                // }).catch(()=>{
+                //     console.log("error");
+                // })
+
+
+                async function execute(){
+                  await fetchData();
+                  await processData();
+                   await saveData();
+                   await (()=>{
+                    console.log("All Task Completed...")
+                   })()
+                }
+                execute();
+
+
+
+
+
+    //    function btnOrder(){
+    //      function order() {
+    //         return new Promise((resolve, reject) => {
+    //             console.log("order placed...");
+
+    //             let isrestaurentopen = false;
+
+    //             if (isrestaurentopen) {
+    //                 setTimeout(() => {
+    //                     resolve("order confirmed...")
+    //                 }, 2000)
+    //             }
+    //             else {
+    //                 setTimeout(()=>{
+    //                     reject("restaurent is closed... sorry...")
+    //                 },2000)
+    //             }
+    //         })
+    //     }
+    //     //    then,catch,finally
+    //     order().then((n)=>{
+    //         console.log(n);
+
+    //     }).catch((n) => {
+    //         console.log(n);
+    //     }).finally(() => {
+    //         setTimeout(()=>{
+    //             console.log("Thanks for using App...")
+    //         },3000)
+    //     })
+    //    }
+
+        
+    </script>
+</body>
+
+</html>

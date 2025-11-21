@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fetchData()">fetchData</button>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js" referrerpolicy="no-referrer"></script>
+    <script>
+       async function fetchData() {
+            const options = {
+                method: 'GET',
+                url: 'https://imdb236.p.rapidapi.com/api/imdb/cast/nm0000190/titles',
+                headers: {
+                    'x-rapidapi-key': '4876bfe787mshde69d0b5ecaadfep1ec372jsnf90842f5c188',
+                    'x-rapidapi-host': 'imdb236.p.rapidapi.com'
+                }
+            };
+
+            try {
+                const response =await axios.request(options);
+                // const response =  axios.get("https://imdb236.p.rapidapi.com/api/imdb/cast/nm0000190/titles");
+                console.log(response.data);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+
+</html>
