@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let p1 = Promise.resolve("A");
+        // let p2 = Promise.reject("B");
+        // let p3 = Promise.resolve("C");
+
+        
+        //Promise.all();
+        // Promise.all([p1, p2, p3]).then((n) => {
+        //     console.log(n);
+        // }).catch((m)=>{
+        //     console.error(m);
+        // }).finally(() => {
+        //     console.log("All Promises Executed...")
+        // })
+
+        //Promise.allSettled()
+        //  Promise.allSettled([p1, p2, p3]).then((n) => {
+        //     console.log(n);
+        // }).catch((m)=>{
+        //     console.error(m);
+        // }).finally(() => {
+        //     console.log("All Promises Executed...")
+        // })
+
+        
+        //Promise.race()
+        let p1=new Promise(resolve=>{
+            setTimeout(()=>{
+                resolve("First Promise")
+            },1000)
+        })
+
+        let p2=new Promise(resolve=>{
+            setTimeout(()=>{
+                resolve("Second Promise")
+            },500)
+        })
+
+        let p3=new Promise(reject=>{
+            setTimeout(()=>{
+                reject("Third Promise")
+            },100)
+        })
+        
+
+        Promise.race([p1,p2,p3]).then((p)=>{
+            console.log("Winner is "+ p);
+        })
+
+
+        // Promise.any()
+        //  Promise.any([p1,p2,p3]).then((p)=>{
+        //     console.log("Winner is "+ p);
+        // })
+    </script>
+</body>
+
+</html>

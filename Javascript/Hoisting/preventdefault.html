@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <a href="https://organicindia.com/" id="link">click</a>
+
+
+       <form action="" id="form">
+        <input type="text" placeholder="Enter Name" name="Name" id="">
+        <input type="submit">
+       </form>
+
+
+       <script>
+        let link=document.getElementById("link");
+
+        link.addEventListener("click",(event)=>{
+             event.preventDefault();
+            //  alert("single click prevented")
+        })
+
+        link.addEventListener("dblclick",()=>{
+            window.location="https://organicindia.com/"
+        })
+
+
+
+        document.addEventListener("contextmenu",(event)=>{
+              event.preventDefault();
+              alert("right click prevented")
+        })
+
+
+
+        let form=document.getElementById("form");
+
+        // form.addEventListener("keydown",(event)=>{
+               
+        //     if(event.key=="Enter"){
+        //         event.preventDefault();
+        //     }
+
+        // })
+
+        form.addEventListener("submit",(event)=>{
+               let username=document.querySelector("input").value;
+            if(username==""){
+                event.preventDefault();
+                alert("Username is required")
+            }
+
+        })
+
+        setTimeout(()=>{
+            console.log("hello")
+        },5000)
+       </script>
+
+
+</body>
+</html>

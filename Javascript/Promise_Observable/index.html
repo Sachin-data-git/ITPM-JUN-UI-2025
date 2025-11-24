@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clicks()">Click</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.2/rxjs.umd.min.js"
+        integrity="sha512-9rY+ul/tDd5uFmYIG3Wf6sTYh44qwK7ZUcAejPR1RzZ4I09ubJBeOoMvLtIUjXWN5ZfR8WgZx9gwnZhMQ0ve9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+         const{Observable}= rxjs;
+        //promise
+
+        // let p1=new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         resolve("First");
+        //     },1000)
+        // })
+        // let p2=new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         resolve("second");
+        //     },2000)
+        // })
+
+
+        // p1.then((n)=>{
+        //     console.log(n);
+        // }).catch(()=>{
+        //     console.log("Error");
+        // })
+
+        // Promise.allSettled([p1,p2]).then((n)=>{
+        //     console.log(n)
+        // })
+
+       
+
+        let observable = new Observable(subscriber => {
+            
+            setTimeout(() => {
+                subscriber.next("First");
+            }, 1000)
+
+
+
+            setTimeout(()=>{
+                 subscriber.next("Second");
+            },2000)
+
+            setTimeout(()=>{
+                 subscriber.next("Third");
+            },3000)
+            setTimeout(()=>{
+                 subscriber.complete();
+            },4000)
+        })
+
+
+       let unsubscribe=observable.subscribe({
+            next(value){console.log(value)},
+            complete(){console.log("All Task Complted")}
+        });
+
+
+      function clicks(){
+          
+             unsubscribe.unsubscribe();
+       
+      }
+
+    </script>
+</body>
+
+</html>
