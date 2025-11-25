@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="demo">clic</button>
+    <script>
+        // function A(){
+        //     console.log("A")
+        // }
+        // function B(){
+        //     console.log("B")
+        // }
+        // function C(){
+        //     console.log("C")
+        // }
+        // function D(){
+        //     console.log("D")
+        // }
+
+        // A();
+        // setTimeout(B,1000);
+        // Promise.resolve().then(()=>{
+        //     C()
+        // });
+        // D();
+
+
+        document.getElementById("demo").addEventListener("click", () => {
+            setTimeout(()=> {
+                console.log('You clicked the button!');
+            }, 5000);
+        })
+
+        console.log("Hi!");
+
+
+
+        setTimeout(()=>{
+                console.log("2 seconds")
+        },2000) 
+
+        console.log("Welcome to loupe.");
+
+        //A D C B
+
+    </script>
+</body>
+
+</html>
