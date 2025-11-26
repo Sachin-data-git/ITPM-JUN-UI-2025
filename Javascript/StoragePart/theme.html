@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .light{
+            background-color: rgb(255, 247, 247);
+            color: rgb(5, 5, 5);
+        }
+    </style>
+</head>
+<body>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda eveniet magnam, voluptas, laborum veritatis suscipit sequi facere possimus distinctio officia voluptatem reprehenderit ratione sint molestiae fugit in debitis dolor.</p>
+
+      <button id="btn">Change Theme</button>
+
+      <script>
+        //   let para=document.querySelector("p");
+        let btn=document.getElementById("btn");
+        let body=document.querySelector("body");
+
+        // btn.addEventListener("click",()=>{
+        //    if(para.classList.contains("dark")){
+        //     alert("Paragraph contains dark class")
+        // }
+        // else{
+        //        alert("Paragraph does not contains dark class")
+
+        //    }
+        // })
+
+
+        let saveTheme=localStorage.getItem("theme");
+
+        if(saveTheme=="light"){
+            body.classList.add("dark")
+        }else{
+            
+            body.classList.add("light")
+        }
+
+
+       btn.addEventListener("click",()=>{
+        if(body.classList.contains("dark")){
+            body.classList.replace("dark","light");
+            localStorage.setItem("theme","dark");
+        }else{
+            
+            body.classList.replace("light","dark");
+            localStorage.setItem("theme","light");
+        }
+       })
+      </script>
+</body>
+</html>
